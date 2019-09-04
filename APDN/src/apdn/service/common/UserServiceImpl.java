@@ -1,10 +1,10 @@
-package apdn.service.commn;
+package apdn.service.common;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import apdn.dao.commn.UserDao;
+import apdn.dao.common.UserDao;
 import apdn.vo.pojo.gblt.GbltUserDtl;
 
 @Service

@@ -1,4 +1,4 @@
-package apdn.dao.commn;
+package apdn.dao.common;
 
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
