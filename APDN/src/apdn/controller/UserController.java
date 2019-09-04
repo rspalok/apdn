@@ -36,7 +36,7 @@ public class UserController
 	{
 		
 		
-		return "user/login";
+		return showLoginForm(gbltUserDtl);
 	}
 
 }
