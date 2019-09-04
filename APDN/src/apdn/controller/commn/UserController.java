@@ -1,4 +1,4 @@
-package apdn.controller;
+package apdn.controller.commn;
 
 import javax.servlet.http.HttpSession;
 
