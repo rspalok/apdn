@@ -35,6 +35,9 @@ public class GbltUserDtl implements Serializable {
 	@Column(name = "num_isvalid",length=1)
 	private Integer m_IIsValid;
 
+	@Column(name = "gnum_userid",length=6)
+	private Integer m_IUserId;
+	
 	public GbltUserDtl() {
 
 	}
