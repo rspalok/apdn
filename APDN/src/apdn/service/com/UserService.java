@@ -1,4 +1,4 @@
-package apdn.service.commn;
+package apdn.service.com;
 
 import apdn.vo.pojo.gblt.GbltUserDtl;
 

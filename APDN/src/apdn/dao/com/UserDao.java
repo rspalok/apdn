@@ -1,4 +1,4 @@
-package apdn.dao.commn;
+package apdn.dao.com;
 
 import apdn.vo.pojo.gblt.GbltUserDtl;
 

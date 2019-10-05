@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="sf"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -270,33 +269,25 @@
 												<div class="space-6"></div>
 												<p>Enter your details to begin:</p>
 												<!-- registration form  start-->
-												<sf:form method="post" modelAttribute="gbltUserDtl">
+												<sf:form method="post" modelAttribute="gbltUserDtl" action="register"  id="register" >
 													<fieldset>
-														<label class="block clearfix"> <span
-															class="block input-icon input-icon-right"> <sf:input
-																	type="text" path="m_stFirstName" class="form-control"
-																	placeholder="Enter Name" /> <i
-																class="ace-icon fa fa-user"></i>
+														<label class="block clearfix"> <span class="block input-icon input-icon-right"> 
+															<sf:input type="text" path="m_stFirstName" class="form-control" placeholder="Enter Name" /> 
+															<i class="ace-icon fa fa-user"></i>
 														</span>
-														</label> <label class="block clearfix"> <span
-															class="block input-icon input-icon-right"> <input
-																type="text" class="form-control" placeholder="Username" />
+														</label> 
+														<label class="block clearfix"> <span class="block input-icon input-icon-right"> 
+														<sf:input type="text"  path=" " class="form-control" placeholder="Username" />
 																<i class="ace-icon fa fa-user"></i>
-										</span>
-														</label> <label class="block clearfix"> <span
-															class="block input-icon input-icon-right"> <input
-																type="password" class="form-control"
-																placeholder="Password" /> <i
-																class="ace-icon fa fa-lock"></i>
+													</span>
+														</label> 
+														<label class="block clearfix"> <span class="block input-icon input-icon-right"> <input
+																type="password" class="form-control" placeholder="Password" /> <i class="ace-icon fa fa-lock"></i>
+														</span> </label> 
+														<label class="block clearfix"> <span class="block input-icon input-icon-right"> <input
+																type="password" class="form-control" placeholder="Repeat password" /> <i class="ace-icon fa fa-retweet"></i>
 														</span>
-														</label> <label class="block clearfix"> <span
-															class="block input-icon input-icon-right"> <input
-																type="password" class="form-control"
-																placeholder="Repeat password" /> <i
-																class="ace-icon fa fa-retweet"></i>
-														</span>
-														</label> <label class="block"> <input type="checkbox"
-															class="ace" /> <span class="lbl"> I accept the <a
+														</label> <label class="block"> <input type="checkbox" class="ace" /> <span class="lbl"> I accept the <a
 																href="#">User Agreement</a>
 														</span>
 														</label>
@@ -352,8 +343,7 @@
 			<div class="space-24"></div>
 			<div class="space-24"></div>
 			<div class="space-24"></div>
-			<div class="col-sm-6 widget-container-col"
-				id="widget-container-col-11">
+			<div class="col-sm-6 widget-container-col" id="widget-container-col-11">
 				<div class="widget-box widget-color-dark" id="widget-box-11">
 					<div class="widget-header">
 						<h6 class="widget-title">Public Notice</h6>

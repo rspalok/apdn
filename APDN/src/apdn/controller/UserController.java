@@ -1,5 +1,8 @@
 package apdn.controller;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
 import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
@@ -27,11 +30,21 @@ public class UserController
 	@GetMapping("/login")
 	public String showLoginForm( GbltUserDtl user1)
 	{
+		InetAddress localhost = null;
+		try {
+			localhost = InetAddress.getLocalHost();
+		} catch (UnknownHostException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
 		System.out.println(user1);
+        System.out.println("System IP Address : " + 
+                      (localhost.getHostAddress()).trim()); 
+		
 		return "user/login";
 	}
 
-	@PostMapping("/login")
+	@PostMapping("/register")
 	public String processLoginForm(GbltUserDtl gbltUserDtl,HttpSession hs,Model map)
 	{
 		
